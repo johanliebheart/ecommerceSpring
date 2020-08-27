@@ -27,10 +27,11 @@ public class ClienteServiceImpl implements IClienteService {
 	}
 
 	@Override
+	@Transactional
 	public int saveGetId(Cliente cliente) {
 		Cliente clien=new Cliente();
 		clien=clienteDao.save(cliente);
-		return clien.getId();
+		return clien.getIdCliente();
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class Cliente implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int idCliente;
 
 	private String nombre;
 
@@ -34,12 +34,12 @@ public class Cliente implements Serializable {
 
 	
 
-	public int getId() {
-		return id;
+	public int getIdCliente() {
+		return idCliente;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setIdCliente(int id) {
+		this.idCliente = id;
 	}
 
 	public String getNombre() {
